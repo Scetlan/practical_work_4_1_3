@@ -47,6 +47,17 @@ button {
     margin: 0;
 }
 
+.menu__navigation_background {
+    position: absolute;
+    width: 100vw;
+    height: 106vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffffae;
+    z-index: -1;
+}
+
 .drop-down {
     position: absolute;
     display: flex;
@@ -59,7 +70,7 @@ button {
 
     z-index: 100;
     background-color: #FFF;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.50), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
 .drop-down__burger-menu_close {
