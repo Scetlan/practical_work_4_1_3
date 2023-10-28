@@ -42,12 +42,27 @@ a {
 button {
     cursor: pointer;
     background-color: transparent;
-    border-color: transparent;
+    border: none;
     padding: 0;
     margin: 0;
 }
 
+.icon {
+    width: 40px;
+    height: 40px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF3E79;
+    border-radius: 100%;
+}
+
+.icon:hover {
+    background-color: #c02150;
+}
+
 .menu__navigation_background {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -56,27 +71,59 @@ button {
     bottom: 0;
     background-color: #ffffffae;
     z-index: -1;
+    opacity: 0;
 }
 
 .drop-down {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     top: 0px;
     left: 0px;
     width: 278px;
     height: 100vh;
-    padding: 18px 24px 32px 24px;
-
     z-index: 100;
     background-color: #FFF;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.50), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
-.drop-down__burger-menu_close {
+.drop-down--active {
     display: flex;
-    align-items: center;
+    transform: translateX(0%);
 }
+
+
+
+
+
+.drop-down__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 24px 32px 24px;
+    height: 95%;
+}
+
+.drop-down__burger-menu_close {
+    background-image: url('../img/icon-close.svg');
+}
+
+.drop-down__search {
+    background-image: url('../img/icon-search.svg');
+}
+
+.drop-down__phone {
+    background-image: url('../img/icon-phone.svg');
+}
+
+.drop-down__message {
+    background-image: url('../img/icon-message.svg');
+}
+
+.drop-down__contact {
+    background-image: url('../img/icon-contact.svg');
+}
+
 
 .drop-down__item .item__link{
     display: block;
@@ -110,33 +157,14 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
-
-.drop-down__search {
-    display: flex;
-    align-items: center;
-}
-
-.drop-down__search:hover svg rect,
-.drop-down__burger-menu_close:hover svg rect {
-    fill: #d70040;
-} 
 
 .drop-down__logo {
-    margin-left: -60px;
+    margin-left: -40px;
 }
 
-.drop-down__footer {
-    position: absolute;
-    bottom: 32px;
-}
-
-.drop-down__icon_servise li button:hover svg rect{
-    fill: #d70040;
-}
-
-.drop-down__icon--btn {
+.drop-down__item--icon {
     margin-right: 16px;
 }
 
