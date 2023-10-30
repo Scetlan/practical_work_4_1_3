@@ -52,10 +52,12 @@
 
     .content {
         display: flex;
+        justify-content: space-between;
     }
 
     .content__article {
-        padding-right: 48px;
+        width: 50%;
+        /* padding-right: 48px; */
     }
 
     .content__text {
@@ -65,7 +67,7 @@
     }
 
     .content__image {
-        width: 360px;
+        width: 45%;
     }
 }
 
@@ -136,9 +138,9 @@
     }
 
     .content__article {
-        width: 50%;
+        width: 55%;
         overflow: auto;
-        padding-right: 36px;
+        margin-right: 20px;
     }
 
     .content__image {

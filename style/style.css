@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 16px;
 
@@ -80,7 +80,7 @@ button {
     flex-direction: column;
     top: 0px;
     left: 0px;
-    width: 278px;
+    width: 320px;
     height: 100vh;
     z-index: 100;
     background-color: #FFF;
@@ -91,10 +91,6 @@ button {
     display: flex;
     transform: translateX(0%);
 }
-
-
-
-
 
 .drop-down__menu {
     display: flex;
@@ -157,6 +153,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
     margin-bottom: 46px;
 }
 
@@ -224,7 +222,7 @@ button {
 }
 
 .menu {
-    padding: 18px 0;
+    padding: 18px 24px;
     background-color: #FFF;
 }
 
@@ -292,7 +290,7 @@ button {
 }
 
 .main__list::-webkit-scrollbar {
-    width: 0;
+    background-color: transparent;
 }
 
 .main__list_desktop {
